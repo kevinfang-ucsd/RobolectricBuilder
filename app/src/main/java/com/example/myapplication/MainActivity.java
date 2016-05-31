@@ -25,7 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+    public void click(View view) {
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText("bye world!");
+    }
 
+    public void changeActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        MainActivity.this.startActivity(intent);
+    }
 
 
 }
